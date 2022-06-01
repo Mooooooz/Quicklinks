@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<!--MADE BY JACK PEMBERTON-->
+
+<script src="scripts/jascript.js"></script>
+
+<!--needs seperate styles to remove img hover-->
+
+<style type="text/css">
+	.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-shadow:3px 15px 4px #888888;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+<style type="text/css">
+  body {
+  background-image:url('background_images/nice2.gif'); background-repeat: repeat; background-size: 100%; background-attachment: fixed;
+}
+</style>
+
+<body>
+
+		    <!--Popout menu-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Quick links.html">Home</a>
+    <a href="#">Timetable</a>
+    <a href="ql news.html">News</a>
+    <a href="#">Edit Links</a>
+    <a href="#">Contact</a>
+    <a href="#">--Subjects--</a>
+
+  </div>
+
+  <span style="color: darkgrey; margin-left: 0.8%; font-size:50px; cursor:pointer" onclick="openNav()">&#9776; </span>
+
+	<img src="background_images/Timetable.png" style="position: absolute; width: 1253px; height:  706; margin-top: 2.5%; margin-left: 2%;">
+
+	<p style="margin-top: 50%; margin-left: 15%; color: white;">To change the timetable take a screen shot of your own, rename it as timetable.png and put it into the background_images folder, replacing the original</p>
+
+</body>
+
+
+
+</html>
